@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+    <!-- The video -->
+<video autoplay  loop id="myVideo">
+    <source src="B1.mp4" type="video/mp4">
+  </video>
+  
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    
+    <!------------------------------------------------------------------------>
+    
+    <a href="index.html"> <button class="glow-on-hover" type="button">RISK IT ALL!</button>
+    
+  </a>
+    <h1>WELCOME TO DARK REALITY</h1>
+    <p>....DARKNESS UNLOCKS ON 7 FEB.....</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">STOP</button>
+  </div>
+
+<script>
+
+
+  // Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+
+
